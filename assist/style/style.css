@@ -1,0 +1,163 @@
+/* title font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+:root {
+  --main-color: #212a3e;
+  --secound-color: #222428;
+  --third-color: #9ba4b5;
+}
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(#212a3e 60%,#9ba4b5);
+    left: 0;
+    top: 0;
+}
+.container {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+  gap: 10px; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Rubik Iso", cursive;
+  font-size: 70px;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+}
+.box .bullets {
+  background-color: var(--secound-color);
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.box .bullets .bullet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--third-color);
+  border-radius: 100%;
+}
+.box .bullets .bullet-active {
+  width: 15px;
+  height: 15px;
+  background-color: var(--third-color);
+  border-radius: 100%;
+}
+.box .bullets .bullet:hover {
+  background-color: var(--third-color);
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.middle .line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--third-color);
+  margin-top: 10px;
+}
+.middle .question {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #dfd6d6;
+  font-size: 25px;
+  padding: 10px;
+}
+.middle .answers {
+  padding: 10px 0px 10px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--third-color);
+  font-size: 20px;
+}
+.middle .answers label:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--secound-color);
+}
+.buttons button {
+  padding: 0;
+  width: 90px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+}
+.buttons button:hover,
+.tryAgain:hover {
+  background-color: var(--third-color);
+  color: var(--main-color);
+}
+.tryAgain {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: var(--third-color);
+  border: 1px solid var(--third-color);
+  padding: 10px 20px;
+  display: none;
+}
+
+/* media */
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  
+    .container {
+        width: 100%;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+   
+    .container {
+        width: 60%;
+    }
+  }
+  @media screen and (min-width: 1200px)  {
+  
+    .container {
+        width: 30%;
+    }
+  }

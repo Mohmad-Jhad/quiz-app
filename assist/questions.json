@@ -1,0 +1,42 @@
+[
+  {
+    "q": "What are the two methods of forms transfer?",
+    "a1": "Get and receive",
+    "a2": "Get and post",
+    "a3": "Post and receive",
+    "a4": "Post and take",
+    "correctAnswer": "Get and post"
+  },
+  {
+    "q": "Which of the following is not an HTML tag?",
+    "a1": "Doctype",
+    "a2": "P",
+    "a3": "Table",
+    "a4": "Style",
+    "correctAnswer": "Doctype"
+  },
+  {
+    "q": "How many ways can you apply colors in CSS?",
+    "a1": "1",
+    "a2": "2",
+    "a3": "3",
+    "a4": "4",
+    "correctAnswer": "3"
+  },
+  {
+    "q": "How can you clear a floated element?",
+    "a1": "Clear:both",
+    "a2": "press the delete key",
+    "a3": "del tag",
+    "a4": "strike tag",
+    "correctAnswer": "Clear:both"
+  },
+  {
+    "q": "A collection of data containing both properties and methods is called...",
+    "a1": "Tag",
+    "a2": "Selector",
+    "a3": "Object",
+    "a4": "Class",
+    "correctAnswer": "Object"
+  }
+]
